@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <meta charset="UTF-8">
@@ -10,59 +11,169 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title> Beatriz | Home </title>
 </head>
+
 <body>
     <main id="sobre">
 
         <header>
             <div class="header-container">
-                <div class="logo">
-                    <a href="#sobre">
-                        <img src="assets/Logo.svg" alt="Beatriz Oliveira">
-                    </a>
+                <div class="header-nav">
+                    <nav>
+                        <div class="logo">
+                            <a href="#sobre">
+                                <img src="assets/Logo.svg" alt="Beatriz Oliveira">
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#projetos">Projetos</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                        <button class="button">Donwload CV</button>
+                    </nav>
                 </div>
-
-                <nav>
-                    <ul>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                    <button>Donwload CV</button>
-                </nav>
             </div>
+            <span class="poly-roxo">
+            </span>
+            <span class="line">
+            </span>
+            <span class="line -blue">
+            </span>
         </header>
 
-       <div class="info-container">
+        <div class="info-container">
             <section class="info">
                 <h1>Beatriz Oliveira Vieira</h1>
                 <h2>UI/UX Designer Jr.</h2>
 
-                <button>Saiba mais</button>
-        </section>
-       </div>
+                <button class="button -mais">Saiba mais</button>
+            </section>
+        </div>
     </main>
 
     <section class="about">
         <h1>Sobre mim</h1>
 
         <div class="content">
-            <img src="./assets/Polygon-1..svg" alt="poligon">
             <div class="about-me">
                 <p>
-                    Meu nome é Beatriz de Oliveira Vieira, tenho 20 anos e sou de São Paulo-SP. Atuei na área de medicina veterinária durante 3 anos como auxiliar de vet. No inicio de 2021 conheci o mundo de UI/UX e resolvi me aprofundar um pouco mais nessa área. Após obter um pouco mais de conhecimento, me apaixonei pela profissão. A cada minuto estudando a vontade de aprender mais só ia aumentando e a paixão crescia cada vez mais.
-                    Estou em busca de minha primeira oportunidade de atuar na área. Tenho facilidade em aprendizado, sou muito dedicada e busco sempre fazer o meu melhor.
+                    Meu nome é Beatriz de Oliveira Vieira, tenho 20 anos e sou de São Paulo-SP. Atuei na área de
+                    medicina veterinária durante 3 anos como auxiliar de vet. No inicio de 2021 conheci o mundo de UI/UX
+                    e resolvi me aprofundar um pouco mais nessa área. Após obter um pouco mais de conhecimento, me
+                    apaixonei pela profissão. A cada minuto estudando a vontade de aprender mais só ia aumentando e a
+                    paixão crescia cada vez mais.<br>
+                    Estou em busca de minha primeira oportunidade de atuar na área. Tenho facilidade em aprendizado, sou
+                    muito dedicada e busco sempre fazer o meu melhor.
                 </p>
 
-                <button>Contato</button>
+                <button class="button -contato">Contato</button>
             </div>
 
             <div class="profile">
                 <img src="./assets/beatriz.svg" alt="Beatriz Oliveira">
                 <span>Certificados</span>
             </div>
+        </div>
+        <div class="poly1">
+            <svg height="500" width="500">
+                <polygon points="250,93 3,497 497,497" fill="none" stroke="url(#myGradient)" stroke-width="3" />
+                <defs>
+                    <linearGradient id="myGradient">
+                        <stop offset="0%" stop-color="#FF0BAC" />
+                        <stop offset="80%" stop-color="#00BEC5" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="poly2">
+            <svg height="500" width="500">
+                <polygon points="250,93 3,497 497,497" fill="none" stroke="url(#myGradient)" stroke-width="3" />
+                <defs>
+                    <linearGradient id="myGradient">
+                        <stop offset="0%" stop-color="#FF0BAC" />
+                        <stop offset="80%" stop-color="#00BEC5" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+    <section class="projetos">
+        <h1>Projetos</h1>
+        <div class="projetos-container">
+            <div class="projetos-border">
+                <div class="projetos-links">
+                    <a href="https://www.behance.net/gallery/117380937/Daily-UI" target="_blank">
+                        <h2>Daily UI<br>Challenge</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="projetos-border">
+                <div class="projetos-links -moveit">
+                    <a href="https://www.behance.net/gallery/117041527/Moveit" target="_blank">
+                        <img src="assets/moveit-logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="projetos-border">
+                <div class="projetos-links -move">
+                    <a href="https://www.behance.net/gallery/117130565/Move" target="_blank">
+                        <img src="assets/move-logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contato">
+        <h1>Contato</h1>
+        <div class="contato-container">
+            <img src="assets/contato-image.png" alt="">
+            <div class="contato-card">
+                <h2>Email</h2>
+                <h3>beatriz.oliveiravieira13@gmail.com</h3>
+                <h2>Redes socias</h2>
+                <div class="icones">
+                    <a href=""><img src="assets/icon-linkedin.png" alt=""></a>
+                    <a href=""><img src="assets/icon-insta.png" alt=""></a>
+                </div>
 
-            <img src="./assets/poligon-2.svg" alt="poligon">
+                <div class="poly5">
+                    <svg height="400" width="400">
+                        <polygon points="200,93 3,397 397,397" fill="none" stroke="url(#myGradient)" stroke-width="3" />
+                        <defs>
+                            <linearGradient id="myGradient">
+                                <stop offset="0%" stop-color="#FF0BAC" />
+                                <stop offset="80%" stop-color="#00BEC5" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="poly3">
+            <svg height="500" width="500">
+                <polygon points="250,93 3,497 497,497" fill="none" stroke="url(#myGradient)" stroke-width="3" />
+                <defs>
+                    <linearGradient id="myGradient">
+                        <stop offset="0%" stop-color="#FF0BAC" />
+                        <stop offset="80%" stop-color="#00BEC5" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+
+        <div class="poly4">
+            <svg height="500" width="500">
+                <polygon points="250,93 3,497 497,497" fill="none" stroke="url(#myGradient)" stroke-width="3" />
+                <defs>
+                    <linearGradient id="myGradient">
+                        <stop offset="0%" stop-color="#FF0BAC" />
+                        <stop offset="80%" stop-color="#00BEC5" />
+                    </linearGradient>
+                </defs>
+            </svg>
         </div>
     </section>
 </body>
+
 </html>
