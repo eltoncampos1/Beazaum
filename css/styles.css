@@ -6,13 +6,13 @@
 
 /*---------------------HEADER---------------------*/
 
+
 main {
     /* background: linear-gradient(231.86deg, #54086B -27.64%, #050833 82.89%), #050833; */
     background-image: url('../assets/cyberpunk-city-scifi-digital-art-uhdpaper.com-hd-4\ 1.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 30vw;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     clip-path: polygon(0% 0, 100% 0%, 100% 82%, 0 100%);
     position: relative;
@@ -80,8 +80,10 @@ a {
     text-decoration: none;
 }
 
+
+
 header {
-    width: 100vw;
+    width: 100%;
 }
 
 .header-container {
@@ -89,14 +91,26 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-}
-
-.logo {
-    margin-top: 25px;
+    max-width: 1240px;
+    height: 78px;
 }
 
 nav {
     display: flex;
+    width: 100%;
+    height: 78px;
+    padding-top: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 78px;
+    height: 78px;
+    margin-top: 0;
+}
+
+.logo img {
     width: 100%;
 }
 
@@ -174,7 +188,7 @@ nav ul li a:hover {
 
 
 .info h2 {
-   color: rgba(255, 11, 172, 0.49);
+    color: rgba(255, 11, 172, 0.49);
     font-size: 2.2rem;
     line-height: 2.5px;
     margin-top: 5rem;
@@ -193,63 +207,40 @@ nav ul li a:hover {
     border: none;
 }
 
-@media (max-width:1920px) {
-    .header-container {
-        display: flex;
-    }
 
-    .header-container .header-nav {
-        margin-top: 25px;
-        width: 100%;
-        display: flex;
-    }
-
-    .header-container .header-nav nav{
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    .header-container .header-nav nav ul li {
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 30px;
-    }
-
-    .logo {
-        margin-top: 0;
-        margin-left: 100px;
-        margin-right: 848px;
-    }
-
-    .info-container {
-        margin-left: 100px;
-        max-width: 1240px;
-    }
-
-    main {
-        background-position: 10vw;
-    }
-    
+nav ul li a:hover {
+    filter: brightness(0.8);
 }
 
-@media (max-width:1440px) {
-    .logo {
-        margin-top: 0;
-        margin-left: 100px;
-        margin-right: 700px;
-    }
 
-    .info-container {
-        margin-left: 100px;
-        max-width: 1240px;
-    }
 
-    main {
-        background-position: 10vw;
-    }
-    
+.header-container .header-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
+
+.header-container .header-nav nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header-container .header-nav nav ul li {
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+
+
+main {
+    background-position: 10vw;
+}
+
+
 
 @media (max-width: 1024px){
     .header-container {
@@ -330,7 +321,6 @@ nav ul li a:hover {
     }
 
     .info-container {
-        align-items: flex-start;
         margin-left: 15px;
         max-width: 1240px;
     }
@@ -376,7 +366,7 @@ nav ul li a:hover {
 section.about {
     overflow: hidden;
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 684px;
     display: flex;
     flex-direction: column;
@@ -456,7 +446,7 @@ div.profile span {
     overflow: hidden;
     position: absolute;
     bottom: -120px;
-    right: -160px;
+    right: -150px;
     width: 500px;
     height: 500px;
     z-index: -1;
@@ -543,7 +533,7 @@ div.profile span {
 
 section.projetos {
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
     height: 682px;
     display: flex;
     flex-direction: column;
@@ -693,7 +683,7 @@ section.projetos {
 section.contato {
     position: relative;
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
     height: 682px;
     text-align: center;
     display: flex;
@@ -857,5 +847,52 @@ section.contato h1 {
     section.contato h1 {
         margin-bottom: 38px;
         font-size: 18px;
+    }
+}
+
+@media (max-width: 1295px) {
+    .poly1 {
+        left: -210px;
+    }
+}
+
+@media (max-width: 1375px) {
+    .poly1 {
+        position: absolute;
+        top: 100px;
+        left: -200px;
+        width: 450px;
+        height: 450px;
+        z-index: -10;
+        transform: rotate(169deg);
+    }
+}
+
+@media (max-width: 1295px) {
+    .header-container {
+        max-width: 1020px;
+    }
+
+    .info-container {
+        max-width: 1020px;
+    }
+
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .poly1 {
+        position: absolute;
+        top: 100px;
+        left: -220px;
+        width: 450px;
+        height: 450px;
+        z-index: -10;
+        transform: rotate(169deg);
+    }
+
+    .contato-container {
+        max-width: 1200px;
     }
 }
