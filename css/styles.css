@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    font:400 1rem  'Comfortaa', cursive, sans-serif;
 }
 
 /*---------------------HEADER---------------------*/
@@ -152,7 +153,7 @@ nav ul li a:hover {
 }
 
 .button::before {
-    content:"";
+  content:"";
   position:absolute;
   top:0;
   left:0;
@@ -162,12 +163,37 @@ nav ul li a:hover {
   padding:3px; 
   background:linear-gradient(90deg, #FF0BAC, #00BEC5); 
   -webkit-mask: 
-     linear-gradient(#fff 0 0) content-box, 
-     linear-gradient(#fff 0 0);
+  linear-gradient(#fff 0 0) content-box, 
+  linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out; 
   mask-composite: exclude; 
+  transition:background-color 0.3s ease;
 }
 
+.button:hover:before {
+    -webkit-animation: play 1.6s ease-in-out;
+    filter: brightness(0.8);
+}
+
+
+@-webkit-keyframes play {
+    0% {
+        background-position: 0px;
+    }
+     /* 25% {
+        background-position: -110px;
+    }
+    50% {
+        background-position: -220px;
+    }
+    75% {
+        background-position: -330px;
+    }  */
+   
+     100% {
+        background-position: -400px;
+    }  
+}
 
 .info-container {
     margin: 0 auto;
@@ -561,7 +587,7 @@ section.projetos {
 }
 
 .projetos-container {
-    width: 1240px;
+    max-width: 1240px;
     display: flex;
     justify-content: space-between;
 }
@@ -571,6 +597,15 @@ section.projetos {
     height: 403px;
     position:relative;
 }
+.projetos-border:hover {
+    width: 500px;
+    height: 500px;
+    position:relative;
+    margin: 10px;
+    transform: translateY(-10%);
+    transition: 0.3s ease;
+}
+
 
 .projetos-border::before {
     content:"";
@@ -595,6 +630,16 @@ section.projetos {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.projetos-links:hover {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
 }
 .projetos-links::before {
     content: "";
@@ -634,6 +679,36 @@ section.projetos {
 .projetos .projetos-links img {
     position: relative;
 }
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     scroll-snap-type: y mandatory;
+}
+
+
+.slick-initialized .slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px !important;
+    scroll-snap-align: start;
+}
+
+
+
+ .item {
+    margin: 10px;
+    border: none;
+}
+
 
 #open-modal {
     cursor: pointer;
@@ -710,6 +785,10 @@ section.projetos {
 .modal-content img {
     max-width: 504px;
     width: 100%;
+}
+
+.contato-card h3:hover {
+    filter:brightness(0.8);
 }
 
 
@@ -860,6 +939,8 @@ section.contato h1 {
     height: 200px;
     transform: rotate(-78deg);
 }
+
+
 
 @media (max-width: 1024px) {
     .contato-container {

@@ -32,3 +32,13 @@ openModal.onclick = () => {
 closeModal.onclick = () => {
   modal.style.display = "none";
 };
+
+window.addEventListener("resize", function () {
+  let carrosselContainer = document.querySelector(".projetos-container");
+  let largura = window.innerWidth;
+  if (largura < 1380) {
+    carrosselContainer.classList.add("carousel");
+  } else {
+    carrosselContainer.classList.remove("carousel");
+  }
+});
