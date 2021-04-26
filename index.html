@@ -2,236 +2,198 @@
 <html lang="en">
 
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/faviicon.png" type="image/svg">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title> Beatriz | Home </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Beatriz Oliveira</title>
 </head>
 
 <body>
-    <main>
+  <header class="menu">
+    <div class="container">
+      <img src="assets/Logo.svg" alt="logo" class="logo">
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="assets/Curriculo_Bea.pdf" target="_blank" class="gradient-border">Download CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <header>
-            <div class="header-container">
-                <div class="header-nav">
-                    <nav>
-                        <div class="logo">
-                            <a href="#sobre">
-                                <img src="assets/Logo.svg" alt="Beatriz Oliveira">
-                            </a>
-                        </div>
-                        <ul class="list-nav">
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                            <a download href="./cv/Curriculo_Bea.pdf"  target="_blank">
-                                <button  class="button">Donwload CV</button>
-                            </a>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <span class="poly-roxo">
-        </span>
-        <span class="line">
-        </span>
-        <span class="line -blue">
-        </span>
+  <main class="banner">
+    <h1>Beatriz Oliveira Vieira</h1>
+    <h2>UI/UX Designer Jr.</h2>
+    <a href="#sobre">
+      <button class="gradient-border">Saiba Mais</button>
+    </a>
+    <span class="banner-poly"></span>
 
-        <div class="info-container">
-            <section class="info">
-                <h1>Beatriz Oliveira Vieira</h1>
-                <h2>UI/UX Designer Jr.</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" class="lines pink" viewBox="0 0 1600 2">
+      <path id="Retângulo_1" data-name="Retângulo 1" class="cls-1" d="M-5-20H1607V23H-5V-20h0Z" />
+    </svg>
 
-                    <a href="#contato" class="button -mais">Saiba mais</a>
-            </section>
-        </div>
-    </main>
+    <svg xmlns="http://www.w3.org/2000/svg" class="lines blue" viewBox="0 0 1600 2">
+      <path id="Retângulo_1" data-name="Retângulo 1" class="cls-1" d="M-5-20H1607V23H-5V-20h0Z" />
+    </svg>
 
-    <section id="sobre" class="about">
-        <h1 data-anime="bottom">Sobre mim</h1>
+  </main>
 
-        <div  class="content">
-            <div data-anime="left" class="about-me">
-                <p>
-                    Meu nome é Beatriz de Oliveira Vieira, tenho 20 anos e sou de São Paulo-SP. Atuei na área de
-                    medicina veterinária durante 3 anos como auxiliar de vet. No inicio de 2021 conheci o mundo de UI/UX
-                    e resolvi me aprofundar um pouco mais nessa área. Após obter um pouco mais de conhecimento, me
-                    apaixonei pela profissão. A cada minuto estudando a vontade de aprender mais só ia aumentando e a
-                    paixão crescia cada vez mais.<br>
-                    Estou em busca de minha primeira oportunidade de atuar na área. Tenho facilidade em aprendizado, sou
-                    muito dedicada e busco sempre fazer o meu melhor.
-                </p>
+  <section class="sobre" id="sobre">
+    <h2>Sobre Min</h2>
+    <div class="container sobre-item">
+      <div class="sobre-info">
+        <p>
+          Meu nome é Beatriz de Oliveira Vieira, tenho 20 anos e sou de São Paulo-SP. Atuei na área de medicina
+          veterinária durante 3 anos como auxiliar de vet. No inicio de 2021 conheci o mundo de UI/UX e resolvi me
+          aprofundar um pouco mais nessa área. Após obter um pouco mais de conhecimento, me apaixonei pela profissão. A
+          cada minuto estudando a vontade de aprender mais só ia aumentando e a paixão crescia cada vez mais.<br>
+          Estou em
+          busca de minha primeira oportunidade de atuar na área. Tenho facilidade em aprendizado, sou muito dedicada e
+          busco sempre fazer o meu melhor.
+        </p>
+        <a href="#contato">
 
-                <a href="#contato">
-                    <button class="button -contato" >Contato</button>
-                </a>
-            </div>
+          <button class="gradient-border">Contato</button>
+        </a>
+      </div>
+      <div class="sobre-img">
+        <img src="assets/beatriz.png" alt="foto Beatriz Oliveira Vieira">
+        <span id="abrir-modal">Certificados</span>
+      </div>
+    </div>
 
-            <div data-anime="right" class="profile">
-                <img src="./assets/beatriz.svg" alt="Beatriz Oliveira">
-               <a id="open-modal">
-                    <span>Certificados</span>
-               </a>
-            </div>
-        </div>
-        <div class="poly1">
-            <svg height="500" width="500">
-                <polygon points="250,93 3,497 497,497" fill="none" stroke="url(#myGradient)" stroke-width="3" />
-                <defs>
-                    <linearGradient id="myGradient">
-                        <stop offset="0%" stop-color="#FF0BAC" />
-                        <stop offset="80%" stop-color="#00BEC5" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-        <div class="poly2">
-            <svg height="500" width="500">
-                <polygon points="250,93 3,497 497,497" fill="none" stroke="url(#myGradient)" stroke-width="3" />
-                <defs>
-                    <linearGradient id="myGradient">
-                        <stop offset="0%" stop-color="#FF0BAC" />
-                        <stop offset="80%" stop-color="#00BEC5" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="triangulo1" fill="url(#myGradient)" viewBox="0 0 400 400">
+      <path id="triangle_by_PhotoshopSupply.co1" data-name="triangle by PhotoshopSupply.co1" class="cls-1"
+        d="M4,404L203.992,4,403.989,404H4Zm4-3H400L204,8Z" transform="translate(-4 -4)" />
+      <defs>
+        <linearGradient id="myGradient">
+          <stop offset="0%" stop-color="#FF0BAC" />
+          <stop offset="80%" stop-color="#00BEC5" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="triangulo2" fill="url(#myGradient)" viewBox="0 0 400 400">
+      <path id="triangle_by_PhotoshopSupply.co1" data-name="triangle by PhotoshopSupply.co1" class="cls-1"
+        d="M4,404L203.992,4,403.989,404H4Zm4-3H400L204,8Z" transform="translate(-4 -4)" />
+      <defs>
+        <linearGradient id="myGradient">
+          <stop offset="0%" stop-color="#FF0BAC" />
+          <stop offset="80%" stop-color="#00BEC5" />
+        </linearGradient>
+      </defs>
+    </svg>
 
 
+  </section>
 
-        <div class="modal">
-            <div class="modal-content">
-                <a id="close-modal">
-                    <span></span>X</span>
-                </a>
-               <div class="certificados">
-                    <h2>Certificados</h2>
-                    <p>Figma design de interfaces do zero ao profissional</p>
-                    <div class="cert">
-                         <img src="./assets/certificao-ui-ux.svg" alt="Certificado UI?UX">
-                    </div>
-                    <h2>Certificados</h2>
-                    <p>Figma design de interfaces do zero ao profissional</p>
-                    <div class="cert">
-                         <img src="./assets/certificao-ui-ux.svg" alt="Certificado UI?UX">
-                    </div>
-                    <h2>Certificados</h2>
-                    <p>Figma design de interfaces do zero ao profissional</p>
-                    <div class="cert">
-                         <img src="./assets/certificao-ui-ux.svg" alt="Certificado UI?UX">
-                    </div>
-                    <h2>Certificados</h2>
-                    <p>Figma design de interfaces do zero ao profissional</p>
-                    <div class="cert">
-                         <img src="./assets/certificao-ui-ux.svg" alt="Certificado UI?UX">
-                    </div>
-               </div>
-            </div>
-        </div>
+  <section class="projetos" id="projetos">
+    <h2>Projetos</h2>
+    <div class="container" id="scroll">
+      <div class="projetos-item bg-dayliui gradient-border">
+        <img src="assets/projeto-styre.png" alt="">
+        <a href="https://www.behance.net/gallery/117380937/Daily-UI" target="_blank">
+          <h2>Dayli UI<br>Challenge</h2>
+        </a>
+      </div>
+      <div class="projetos-item gradient-border">
+        <img src="assets/projeto-moveit.png" alt="">
+        <a href="https://www.behance.net/gallery/117041527/Moveit" target="_blank">
+          <img src="assets/moveit-logo.svg" alt="" class="opac bg-moveit">
+        </a>
+      </div>
+      <div class="projetos-item gradient-border">
+        <img src="assets/projeto-move.png" alt="">
+        <a href="https://www.behance.net/gallery/117130565/Move" target="_blank">
+          <img src="assets/move-logo.png" alt="" class="opac bg-move">
+        </a>
+      </div>
+    </div>
+  </section>
 
-    </section>
-    <section id="projetos" class="projetos">
-        <h1>Projetos</h1>
-        <div class="projetos-container carousel">
-           <div class="item">
-                <div class="projetos-border">
-                    <div class="projetos-links">
-                        <a href="https://www.behance.net/gallery/117380937/Daily-UI" target="_blank">
-                            <h2>Daily UI<br>Challenge</h2>
-                        </a>
-                    </div>
-                </div>
-           </div>
-            <div class="item">
-                <div class="projetos-border">
-                    <div class="projetos-links -moveit">
-                        <a href="https://www.behance.net/gallery/117041527/Moveit" target="_blank">
-                            <img src="assets/moveit-logo.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="projetos-border">
-                    <div class="projetos-links -move">
-                        <a href="https://www.behance.net/gallery/117130565/Move" target="_blank">
-                            <img src="assets/move-logo.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contato" class="contato">
-        <h1 data-anime="bottom" >Contato</h1>
-        <div class="contato-container" data-anime="bottom">
-            <img src="assets/contato-image.png" alt="">
-            <div class="contato-card">
-                <h2>Email</h2>
-                <a href="mailto:beatriz.oliveiravieira13@gmail.com">
-                    <h3>beatriz.oliveiravieira13@gmail.com</h3>
-                </a>
-                <h2>Redes socias</h2>
-                <div class="icones">
-                    <a href="https://www.linkedin.com/in/beatriz-oliveira-476b54201/" target="_blank">
-                        <img src="assets/icon-linkedin.png" alt="">
-                    </a>
-                    <a href="https://www.instagram.com/beazaum/" target="_blank">
-                        <img src="assets/icon-insta.png" alt="Instagram Beatriz Oliveira">
-                    </a>
-                </div>
-
-                <div class="poly5">
-                    <svg height="400" width="400">
-                        <polygon points="200,93 3,397 397,397" fill="none" stroke="url(#myGradient)" stroke-width="3" />
-                        <defs>
-                            <linearGradient id="myGradient">
-                                <stop offset="0%" stop-color="#FF0BAC" />
-                                <stop offset="80%" stop-color="#00BEC5" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-            </div>
+  <section class="contato" id="contato">
+    <h2>Contato</h2>
+    <div class="container contato-item">
+      <div class="contato-img">
+      </div>
+      <div class="contato-info">
+        <h2>Email</h2>
+        <h3>beatriz.oliveiravieira13@gmail.com</h3>
+        <h2>Redes sociais</h2>
+        <div class="contato-icones">
+          <a href="#">
+            <img src="assets/icon-linkedin.png" alt="icone do linkedin">
+          </a>
+          <a href="#">
+            <img src="assets/icon-insta.png" alt="icone do instagram">
+          </a>
         </div>
 
-        <div class="poly3">
-            <svg>
-                <polygon points="250,93 3,497 497,497" fill="none" stroke="url(#myGradient)" stroke-width="3" />
-                <defs>
-                    <linearGradient id="myGradient">
-                        <stop offset="0%" stop-color="#FF0BAC" />
-                        <stop offset="80%" stop-color="#00BEC5" />
-                    </linearGradient>
-                </defs>
-            </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="triangulo3" fill="url(#myGradient)" viewBox="0 0 400 400">
+          <path id="triangle_by_PhotoshopSupply.co1" data-name="triangle by PhotoshopSupply.co1" class="cls-1"
+            d="M4,404L203.992,4,403.989,404H4Zm4-3H400L204,8Z" transform="translate(-4 -4)" />
+          <defs>
+            <linearGradient id="myGradient">
+              <stop offset="0%" stop-color="#FF0BAC" />
+              <stop offset="80%" stop-color="#00BEC5" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="triangulo4" fill="url(#myGradient)" viewBox="0 0 400 400">
+      <path id="triangle_by_PhotoshopSupply.co1" data-name="triangle by PhotoshopSupply.co1" class="cls-1"
+        d="M4,404L203.992,4,403.989,404H4Zm4-3H400L204,8Z" transform="translate(-4 -4)" />
+      <defs>
+        <linearGradient id="myGradient">
+          <stop offset="0%" stop-color="#FF0BAC" />
+          <stop offset="80%" stop-color="#00BEC5" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="triangulo5" fill="url(#myGradient)" viewBox="0 0 400 400">
+      <path id="triangle_by_PhotoshopSupply.co1" data-name="triangle by PhotoshopSupply.co1" class="cls-1"
+        d="M4,404L203.992,4,403.989,404H4Zm4-3H400L204,8Z" transform="translate(-4 -4)" />
+      <defs>
+        <linearGradient id="myGradient">
+          <stop offset="0%" stop-color="#FF0BAC" />
+          <stop offset="80%" stop-color="#00BEC5" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </section>
+
+  <div class="modal-bg">
+    <div class="modal gradient-border">
+      <button id="fechar-modal">
+        <img src="assets/x.svg" alt="">
+      </button>
+      <h1>Certificados</h1>
+      <div class="certificado">
+
+        <div class="certificado-item">
+          <h2>Figma design de interfaces do zero ao profissional</h2>
+          <img src="assets/Certificado_UI-UX.jpg" alt="">
+        </div>
+        <div class="certificado-item">
+          <h2>Projetos ágeis com SCRUM</h2>
+          <img src="assets/Certificado_scrum.png" alt="">
         </div>
 
-        <div class="poly4">
-            <svg height="500" width="500">
-                <polygon points="250,93 3,497 497,497" fill="none" stroke="url(#myGradient)" stroke-width="3" />
-                <defs>
-                    <linearGradient id="myGradient">
-                        <stop offset="0%" stop-color="#FF0BAC" />
-                        <stop offset="80%" stop-color="#00BEC5" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-    </section>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
-    <script src="./scripts/carrousel.js"></script>
-    <script src="./scripts/script.js"></script>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
