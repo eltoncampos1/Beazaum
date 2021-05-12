@@ -25,6 +25,7 @@ body, button {
 .container {
   display: flex;
   max-width: 1240px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -83,11 +84,11 @@ body, button {
   z-index: 2;
 }
 
-.menu .container {
+/* .menu .container {
   margin-left: 100px;
   margin-right: auto;
   max-width: 90%;
-}
+} */
 
 header.menu .container {
   align-items: center;
@@ -121,10 +122,6 @@ header.menu .container {
 }
 
 @media (max-width: 779px) {
-  .menu-nav ul li a.gradient-border {
-    display: none;
-  }
-
   .menu .container {
     margin-left: 38px;
   }
@@ -148,6 +145,22 @@ header.menu .container {
     color: #F3F3F3;
     font-size: 0.875em;
   }
+
+  @media only screen and (max-width: 425px) {
+    .container {
+      max-width: 380px;
+    }
+
+    .menu-nav ul li a.gradient-border {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    header .container ul li a{
+      font-size: 0.8rem;
+    }
+  }
 }
 
 /* - - - - - - - - BANNER - - - - - - - - */
@@ -155,15 +168,21 @@ header.menu .container {
 .banner {
   height: 800px;
   background: url('/assets/main-bg.jpg') no-repeat;
+  background-size: 70% 100vh;
+  background-position: right;
   padding: 264px 0 0 100px;
   clip-path: polygon(0% 0, 100% 0%, 100% 82%, 0 100%);
   position: relative;
 }
 
+.banner-container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
 .banner h1 {
   font-size: 3em;
   color: #00BEC5;
-
 }
 
 .banner h2 {
@@ -197,7 +216,7 @@ header.menu .container {
   z-index: -1;
   top: 0; right: 0; bottom: 0; left: 0;
   background: linear-gradient(231.86deg, #54086B -27.64%, #050833 82.89%), #050833;
-  clip-path: polygon(0% 0, 68vw 0%, 40% 93%, 0 100%);
+  clip-path: polygon(0% 0, 63vw 0%, 40% 93%, 0 100%);
 }
 
 .lines {
@@ -240,10 +259,47 @@ header.menu .container {
   }
 }
 
-@media (max-width: 920px) {
-  .banner {
-    background-position: -300px 0;
+
+
+
+@media only screen and (max-width: 1024px) {
+  .banner-poly::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: linear-gradient(231.86deg, #54086B -27.64%, #050833 82.89%), #050833;
+    clip-path: polygon(0% 0, 65vw 0%, 40% 93%, 0 100%);
   }
+
+  .banner {
+    background-size: cover;
+    background-position: left;
+  }
+
+  .about-me {
+    margin-left: -70px;
+  }
+
+  .about-me h1 {
+    font-size: 2.7em;
+  }
+   
+  .container {
+    max-width: 850px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .container ul li a {
+    font-size: 1em;
+  }
+
+}
+
+@media (max-width: 920px) {
   .banner-poly::before {
     content: '';
     clip-path: polygon(0% 0, 85vw 0%, 50% 93%, 0 100%);
@@ -311,6 +367,18 @@ header.menu .container {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 650px;
+    width: 100%;
+  }
+
+  .banner-container {
+    max-width:600px;
+  }
+
+}
+
 @media (max-width: 569px) {
   .banner {
     padding: 264px 0 0 38px;
@@ -349,6 +417,45 @@ header.menu .container {
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .banner-container {
+    max-width: 300px;
+  }
+
+  .banner {
+    height: 600px;
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .banner-container {
+    max-width: 240px;
+
+  }
+
+  .about-me {
+    transform: translateY(-100px);
+  }
+
+
+  .banner-poly::before {
+    content: '';
+    clip-path: polygon(0% 0, 95vw 0%, 60% 93%, 0 100%);
+  }
+}
+
+
+
+@media only screen and (max-width: 320px) {
+  .logo {
+    width: 50px;
+  }
+ 
+  .banner-container {
+    max-width: 200px;
+  }
+}
 
 /* - - - - - - - - SOBRE - - - - - - - - */
 
@@ -635,6 +742,8 @@ overflow: hidden;
   }
 }
 
+
+
 /* - - - - - - - - PROJETOS - - - - - - - - */
 
 .projetos {
@@ -807,9 +916,13 @@ overflow: hidden;
 .contato-info {
   flex: 1;
   text-align: center;
-  padding: 82px 10px 0 10px;
   position: relative;
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contato-info h2{
@@ -825,6 +938,9 @@ overflow: hidden;
 
 .contato-info .contato-icones {
   margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contato-info .contato-icones a + a{
@@ -891,6 +1007,10 @@ overflow: hidden;
     margin-top: 16px;
   }
 
+  .contato-info .contato-icones a + a{
+    margin-left: 30px;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -928,6 +1048,11 @@ overflow: hidden;
 
   .contato-info .contato-icones {
     margin-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .contato-info .contato-icones a + a{
+    margin-left: 20px;
   }
 
   .triangulo3 {
@@ -957,6 +1082,11 @@ overflow: hidden;
     right: -40px;
     transform: rotate(130deg);
     z-index: -4;
+  }
+
+  @media (min-width: 425px) {
+    .contato-info .contato-icones a + a {
+    }
   }
 
 }
