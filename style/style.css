@@ -88,12 +88,6 @@ body, button {
   z-index: 2;
 }
 
-/* .menu .container {
-  margin-left: 100px;
-  margin-right: auto;
-  max-width: 90%;
-} */
-
 header.menu .container {
   align-items: center;
 }
@@ -151,7 +145,6 @@ header.menu .container {
 
 @media (max-width: 569px) {
   .menu .container {
-    margin-left: 15px;
     margin-right: auto;
     max-width: 100%;
   }
@@ -162,7 +155,7 @@ header.menu .container {
   }
 
   .menu-nav ul li a {
-    padding: 15px;
+    padding: 20px;
     color: #F3F3F3;
     font-size: 0.875em;
   }
@@ -952,9 +945,6 @@ overflow: hidden;
     font-size: 12px;
   }
 
-  .sobre-img {
-    margin-right: -50px;
-  }
 
   .sobre h2 {
     font-size: 20px;
@@ -962,12 +952,13 @@ overflow: hidden;
   
   .sobre-info p {
     display: block;
-    max-width: 330px;
-    margin-left: -30px;
+    max-width: 188px;
   }
 
   .sobre-item {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .sobre-info  {
@@ -976,9 +967,7 @@ overflow: hidden;
     align-items: start;
   }
 
-  .sobre-info a {
-    transform: translateX(-32px)
-  }
+
 }
 
 
@@ -1163,7 +1152,7 @@ overflow: hidden;
   @media only screen and (max-width: 375px) {
     .projetos h2 {
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 700;
     }
   }
 }
@@ -1182,6 +1171,8 @@ overflow: hidden;
   margin-bottom: 100px;
   margin-top: 10px;
   color: #050833;
+
+  font-weight: 700;
 }
 
 
@@ -1413,7 +1404,7 @@ overflow: hidden;
     left: 250px;
   }
 
-  .contato h2{
+  .contato  h2{
     font-size: 18px;
   }
 
