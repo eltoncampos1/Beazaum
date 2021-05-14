@@ -228,7 +228,7 @@ header.menu .container {
 /* - - - - - - - - BANNER - - - - - - - - */
 
 .banner {
-  height: 100vh;
+  height: 800px;
   background: url('/assets/main-bg.jpg') no-repeat;
   background-size: 70% 100vh;
   background-position: right;
