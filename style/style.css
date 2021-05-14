@@ -200,6 +200,10 @@ header.menu .container {
     .menu-nav ul li a {
       padding: 10px;
     }
+
+    .menu .container {
+      max-width: 350px;
+    }
   }
   
 
@@ -207,7 +211,11 @@ header.menu .container {
 
   @media only screen and (max-width: 363px) {
     header .container ul li a {
-      font-size: 12px;
+      font-size: 12px;      
+    }
+
+    .menu .container {
+      max-width: 335px;
     }
   }
 
@@ -221,7 +229,7 @@ header.menu .container {
 /* - - - - - - - - BANNER - - - - - - - - */
 
 .banner {
-  height: 800px;
+  height: 100vh;
   background: url('/assets/main-bg.jpg') no-repeat;
   background-size: 70% 100vh;
   background-position: right;
@@ -906,7 +914,7 @@ overflow: hidden;
   }
 
   .modal {
-    width: 50%;
+    width: 70%;
     height: 50%;
     background: #050833;
     border-radius: 12px;
@@ -915,6 +923,13 @@ overflow: hidden;
 
   .certificado-item img {
     margin-bottom: 34px;
+  }
+}
+
+
+@media only screen and (max-width: 430px) {
+  .modal {
+    width: 80%;
   }
 }
 
@@ -965,6 +980,12 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: start;
+  }
+
+
+  .modal {
+    width: 90%;
+    height: 40%;
   }
 
 
