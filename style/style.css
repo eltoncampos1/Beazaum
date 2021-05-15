@@ -226,7 +226,7 @@ header.menu .container {
 /* - - - - - - - - BANNER - - - - - - - - */
 
 .banner {
-  height: 100vh;
+  height: 95vh;
   background: url('/assets/main-bg.jpg') no-repeat;
   background-size: 70% 100vh;
   background-position: right;
@@ -524,7 +524,15 @@ header.menu .container {
 @media only screen and (max-width: 425px) { 
 
   .banner {
-    height: 600px;
+    height: 65vh;
+  }
+
+  .banner h1 {
+    font-size: 20px;
+  }
+
+  .about-me {
+    transform: translateY(-100px);
   }
 }
 
