@@ -47,7 +47,13 @@ body, button {
 
 @media (max-width: 569px) {
   .container {
-    min-width: 300px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    max-width: 250px;
   }
 }
 
@@ -93,8 +99,7 @@ header.menu .container {
 }
 
 .menu-nav {
-  flex: 1;
-  align-self: center;
+  width: 100%;
 }
 
 .menu-nav ul {
@@ -139,23 +144,17 @@ header.menu .container {
 }
 
 
-
-
-
-
 @media (max-width: 569px) {
   .menu .container {
-    margin-right: auto;
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .menu-nav ul {
-    float: none;
     justify-content: space-evenly;
   }
 
   .menu-nav ul li a {
-    padding: 20px;
+    padding: 15px;
     color: #F3F3F3;
     font-size: 0.875em;
   }
@@ -167,9 +166,6 @@ header.menu .container {
   }
 
   @media only screen and (max-width: 425px) {
-    .container {
-      max-width: 380px;
-    }
 
     .menu-nav ul li a {
       font-size: 14px;
@@ -181,6 +177,7 @@ header.menu .container {
     }
   }
 
+
   @media only screen and (max-width: 400px) {
     .logo {
       width: 54px;
@@ -191,7 +188,11 @@ header.menu .container {
     }
 
     .menu-nav ul li a {
-      padding: 0;
+      padding: 15px;
+    }
+
+    .menu-nav ul {
+      justify-content: space-between;
     }
   }
 
@@ -200,10 +201,6 @@ header.menu .container {
     .menu-nav ul li a {
       padding: 10px;
     }
-
-    .menu .container {
-      max-width: 350px;
-    }
   }
   
 
@@ -211,7 +208,7 @@ header.menu .container {
 
   @media only screen and (max-width: 363px) {
     header .container ul li a {
-      font-size: 12px;      
+      font-size: 14px;      
     }
 
     .menu .container {
@@ -443,7 +440,7 @@ header.menu .container {
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 650px;
-    width: 100%;
+    width: 90%;
   }
 
   .banner {
@@ -524,10 +521,7 @@ header.menu .container {
   }
 }
 
-@media only screen and (max-width: 425px) {
-  .banner-container {
-    max-width: 300px;
-  }
+@media only screen and (max-width: 425px) { 
 
   .banner {
     height: 600px;
