@@ -5,8 +5,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
   <title>Beatriz Oliveira</title>
 </head>
@@ -28,13 +29,13 @@
 
   <main class="banner">
     <div class="banner-container">
-     <div class="about-me">
+      <div class="about-me">
         <h1>Beatriz Oliveira Vieira</h1>
         <h2>UI/UX Designer Jr.</h2>
         <a href="#sobre">
           <button class="gradient-border">Saiba Mais</button>
         </a>
-     </div>
+      </div>
       <span class="banner-poly"></span>
 
       <svg xmlns="http://www.w3.org/2000/svg" class="lines pink" viewBox="0 0 1600 2">
@@ -52,7 +53,7 @@
     <div class="container sobre-item">
       <div class="sobre-info">
         <p>
-          Meu nome é Beatriz de Oliveira Vieira, tenho 20 anos e sou de São Paulo-SP. Atuei na área de medicina
+          Meu nome é Beatriz de Oliveira Vieira, tenho 21 anos e sou de São Paulo-SP. Atuei na área de medicina
           veterinária durante 3 anos como auxiliar de vet. No inicio de 2021 conheci o mundo de UI/UX e resolvi me
           aprofundar um pouco mais nessa área. Após obter um pouco mais de conhecimento, me apaixonei pela profissão. A
           cada minuto estudando a vontade de aprender mais só ia aumentando e a paixão crescia cada vez mais.<br>
@@ -98,24 +99,28 @@
 
   <section class="projetos" id="projetos">
     <h2>Projetos</h2>
-    <div class="container" id="scroll">
-      <div class="projetos-item bg-dayliui gradient-border">
-        <img src="assets/projeto-styre.png" alt="">
-        <a href="https://www.behance.net/gallery/117380937/Daily-UI" target="_blank">
-          <h2>Dayli UI<br>Challenge</h2>
-        </a>
-      </div>
-      <div class="projetos-item gradient-border">
-        <img src="assets/projeto-moveit.png" alt="">
-        <a href="https://www.behance.net/gallery/117041527/Moveit" target="_blank">
-          <img src="assets/moveit-logo.svg" alt="" class="opac bg-moveit">
-        </a>
-      </div>
-      <div class="projetos-item gradient-border">
-        <img src="assets/projeto-move.png" alt="">
-        <a href="https://www.behance.net/gallery/117130565/Move" target="_blank">
-          <img src="assets/move-logo.png" alt="" class="opac bg-move">
-        </a>
+    <div class="container wrapper" id="scroll">
+      <img src="assets/arrow-left.png" class="prev" />
+      <img src="assets/arrow-right.png" class="next" />
+      <div class="slide">
+        <div class="projetos-item bg-dayliui gradient-border">
+          <img src="assets/projeto-styre.png" alt="">
+          <a href="https://www.behance.net/gallery/117380937/Daily-UI" target="_blank">
+            <h2 id="daily-ui-text">Dayli UI<br>Challenge</h2>
+          </a>
+        </div>
+        <div class="projetos-item gradient-border">
+          <img src="assets/projeto-moveit.png" alt="">
+          <a href="https://www.behance.net/gallery/117041527/Moveit" target="_blank">
+            <img src="assets/moveit-logo.svg" alt="" class="opac bg-moveit">
+          </a>
+        </div>
+        <div class="projetos-item gradient-border">
+          <img src="assets/projeto-move.png" alt="">
+          <a href="https://www.behance.net/gallery/117130565/Move" target="_blank">
+            <img src="assets/move-logo.png" alt="" class="opac bg-move">
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -127,9 +132,9 @@
       </div>
       <div class="contato-info">
         <h2>Email</h2>
-          <a href="mailto:beatriz.oliveiravieira13@gmail.com">
-            <h3>beatriz.oliveiravieira13@gmail.com</h3>
-          </a>
+        <a href="mailto:beatriz.oliveiravieira13@gmail.com">
+          <h3>beatriz.oliveiravieira13@gmail.com</h3>
+        </a>
         <h2>Redes sociais</h2>
         <div class="contato-icones">
           <a href="https://www.linkedin.com/in/beatriz-oliveira-476b54201/" target="_blank">
@@ -188,7 +193,8 @@
         <div class="certificado-item">
           <h2>Figma design de interfaces do zero ao profissional</h2>
           <a href="assets/Certificado_UI-UX.jpg" target="_blank">
-            <img src="assets/Certificado_UI-UX.jpg" alt="Certificado Figma design de interfaces do zero ao profissional">  
+            <img src="assets/Certificado_UI-UX.jpg"
+              alt="Certificado Figma design de interfaces do zero ao profissional">
           </a>
         </div>
         <div class="certificado-item">
@@ -203,6 +209,7 @@
   </div>
 
   <script src="js/script.js"></script>
+  <script type="module" src="js/slide.js"></script>
 </body>
 
 </html>
