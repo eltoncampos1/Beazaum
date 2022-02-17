@@ -16,7 +16,7 @@ window.onload = () => {
         }
         moveSlide(distX) {
             this.dist.movePosition = distX;
-            this.slide.style.transform = `translate3d(${distX}px, 0, 0)`;
+            this.slide.style.transform = `translate3d(${distX - 88}px, 0, 0)`;
         }
 
         updatePosition(clientX) {

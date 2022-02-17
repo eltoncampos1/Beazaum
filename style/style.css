@@ -1479,9 +1479,11 @@ header.menu .container {
 
 .prev,
 .next {
-  display: block;
+  display: none;
   position: absolute;
+  cursor: pointer;
 }
+
 
 
 .slide {
@@ -1523,9 +1525,28 @@ header.menu .container {
   transform: scale(1);
 }
 
+
+
 @media only screen and (max-width: 1440px) {
   .slide {
     display: flex;
     max-width: 100vw;
   }
+
+  .prev,
+  .next {
+    display: block;
+  }
+
 }
+
+/* 
+@media only screen and (max-width: 1440px) {
+  .wide {
+    display: none
+  }
+
+  .sm {
+    display: block;
+  }
+} */
